@@ -1,0 +1,29 @@
+{
+  "name": "年龄城市示例",
+  "k": 2,
+  "quasiIdentifiers": ["age", "city"],
+  "records": [
+    { "rowId": "r1", "values": { "age": "20", "city": "甲" } },
+    { "rowId": "r2", "values": { "age": "21", "city": "甲" } },
+    { "rowId": "r3", "values": { "age": "30", "city": "乙" } },
+    { "rowId": "r4", "values": { "age": "31", "city": "乙" } }
+  ],
+  "hierarchies": [
+    {
+      "field": "age",
+      "chains": {
+        "20": ["20", "20段", "ALL_AGE"],
+        "21": ["21", "20段", "ALL_AGE"],
+        "30": ["30", "30段", "ALL_AGE"],
+        "31": ["31", "30段", "ALL_AGE"]
+      }
+    },
+    {
+      "field": "city",
+      "chains": {
+        "甲": ["甲", "ALL_CITY"],
+        "乙": ["乙", "ALL_CITY"]
+      }
+    }
+  ]
+}

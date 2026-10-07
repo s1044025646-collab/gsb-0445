@@ -1,0 +1,7 @@
+node_modules/
+dist/
+data/*.sqlite
+data/*.sqlite-*
+data/srv.out
+data/srv.err
+data/exports/
